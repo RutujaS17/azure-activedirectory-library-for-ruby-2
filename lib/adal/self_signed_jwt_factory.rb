@@ -75,7 +75,7 @@ module ADAL
       expires = now + 60 * SELF_SIGNED_JWT_LIFETIME
       logger.verbose("Creating self signed JWT payload. Expires: #{expires}. " \
                      "NotBefore: #{now}.")
-      { AUDIENCE => @token_endpoint,
+      { AUDIENCE => @token_endpoint.to_s,
         ISSUER => @client_id,
         SUBJECT => @client_id,
         NOT_BEFORE => now.to_i,
