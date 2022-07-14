@@ -23,7 +23,7 @@
 module ADAL
   # The current ADAL version.
   class Version
-    MAJOR = 1 unless defined? MAJOR
+    MAJOR = 3 unless defined? MAJOR
     MINOR = 0 unless defined? MINOR
     UPDATE = 0 unless defined? UPDATE
 
